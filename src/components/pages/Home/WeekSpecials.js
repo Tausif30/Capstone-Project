@@ -37,7 +37,7 @@ const WeekSpecials = () => {
   return (
     <section className="container grid week-specials">
       <div className="week-specials-header">
-        <h2>This week specials!</h2>
+        <h2>Dishes of the Day!</h2>
         <Link className="button-primary" to={pages.get('menu').path}>
           Menu
         </Link>
