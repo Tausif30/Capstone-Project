@@ -8,9 +8,9 @@ import MealCard from './MealCard';
 
 const meals = [
   {
-    name: 'Turkish Pizza',
+    name: 'Pide',
     image: turkishPizzaImage,
-    price: '$10.00',
+    price: '$9.50',
     description: `A delectable fusion of thin, crispy crust topped with savory minced meat, fresh vegetables, 
     and a blend of aromatic spices. Satisfy your taste buds with this mouthwatering delight 
     that will transport you to the vibrant streets of Turkey. `,
@@ -38,8 +38,8 @@ const WeekSpecials = () => {
     <section className="container grid week-specials">
       <div className="week-specials-header">
         <h2>This week specials!</h2>
-        <Link className="button-primary" to={pages.get('orderOnline').path}>
-          Online Menu
+        <Link className="button-primary" to={pages.get('menu').path}>
+          Menu
         </Link>
       </div>
       {meals.map((meal, index) => 

@@ -1,0 +1,57 @@
+.menu{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  grid-auto-flow: row;
+  gap: 1.25rem;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.menu-1{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  grid-auto-flow: row;
+  gap: 1.25rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: -5%;
+}
+.menu-header h2 {
+  line-height: 1;
+  font-family: "Markazi Text";
+  font-weight: normal;
+  font-size: 2.5rem;
+}
+.menu-header{
+  margin-top: 3%;
+  margin-left: 12%;
+}
+@media (max-width: 960px) {
+.menu {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+}
+.menu-1 {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+}
+.menu-header {
+  grid-column: 1 / 3;
+}
+}
+
+@media (max-width: 692px) {
+.menu {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+}
+.menu-1 {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  margin-top: -20%;
+}
+.menu-header {
+  grid-column: 1 / 2;
+}
+}
