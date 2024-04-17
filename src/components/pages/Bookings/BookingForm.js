@@ -162,5 +162,4 @@ const BookingForm = ({
     </form>
   );
 };
-
 export default BookingForm;

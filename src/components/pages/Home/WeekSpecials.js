@@ -37,12 +37,12 @@ const WeekSpecials = () => {
   return (
     <section className="container grid week-specials">
       <div className="week-specials-header">
-        <h2>Dishes of the Day!</h2>
+        <h2>Best Selling Items!</h2>
         <Link className="button-primary" to={pages.get('menu').path}>
           Menu
         </Link>
       </div>
-      {meals.map((meal, index) => 
+      {meals.map((meal, index) =>
         <MealCard key={index} meal={meal} />
       )}
     </section>

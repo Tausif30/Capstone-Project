@@ -23,7 +23,7 @@
 
 .bookings button:disabled,
 .bookings button[disabled] {
-  background-color: #EDEFEE;
+  background-color: #495E57;
   border-color: #EDEFEE;
   color: #ADAFAE;
   cursor: not-allowed;

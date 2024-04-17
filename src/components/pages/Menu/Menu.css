@@ -29,11 +29,11 @@
 }
 @media (max-width: 960px) {
 .menu {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2,1fr);
   grid-template-rows: auto auto auto;
 }
 .menu-1 {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2,1fr);
   grid-template-rows: auto auto auto;
 }
 .menu-header {
@@ -49,7 +49,7 @@
 .menu-1 {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, auto);
-  margin-top: -20%;
+  margin-top: -12%;
 }
 .menu-header {
   grid-column: 1 / 2;

@@ -27,16 +27,16 @@ const App = () => {
           />
           <Route path={pages.get('bookings').path} element={<Bookings />} />
           <Route 
-            path={pages.get('confirmedBooking').path} 
-            element={<ConfirmedBooking />} 
+            path={pages.get('confirmedBooking').path}
+            element={<ConfirmedBooking />}
           />
-          <Route 
-            path={pages.get('orderOnline').path} 
-            element={<UnderConstruction />} 
+          <Route
+            path={pages.get('orderOnline').path}
+            element={<UnderConstruction />}
           />
-          <Route 
-            path={pages.get('login').path} 
-            element={<UnderConstruction />} 
+          <Route
+            path={pages.get('login').path}
+            element={<UnderConstruction />}
           />
           <Route path="*" element={<NotFound />} />
         </Routes>
