@@ -22,7 +22,7 @@ const Header = () => {
         headerElement.style.transform = "translateY(0)";
       }
       else{
-        headerElement.style.transform = "translateY(-200px)";
+        headerElement.style.transform = "translateY(200px)";
       }
       prevScrollPos = currentScrollPos;
     }
@@ -58,7 +58,7 @@ const { pathname } = useLocation();
             <FontAwesomeIcon icon={faXmark} size="2x" /> : 
             <FontAwesomeIcon icon={faBars} size="2x" />}
         </button>
-        <ul 
+        <ul
           className={isNavExpanded ? 'nav-bar-links expanded' : 'nav-bar-links'} 
           onClick={() => setIsNavExpanded(!isNavExpanded)}
         >

@@ -4,7 +4,8 @@
 .meal-card {
   grid-column: auto;
   grid-row: 2;
-  min-height: 31.25rem;
+  min-height: auto;
+  min-width: fit-content;
   padding-bottom: 2.5rem;
   display: flex;
   flex-direction: column;

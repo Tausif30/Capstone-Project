@@ -1,5 +1,5 @@
 import {
-  Route, 
+  Route,
   Routes
 } from 'react-router-dom';
 import pages from './utils/pages';
@@ -17,16 +17,16 @@ const App = () => {
       <Layout>
         <Routes>
           <Route path={pages.get('home').path} element={<Home />} />
-          <Route 
-            path={pages.get('about').path} 
-            element={<AboutUs />} 
+          <Route
+            path={pages.get('about').path}
+            element={<AboutUs />}
           />
-          <Route 
-            path={pages.get('menu').path} 
-            element={<Menu />} 
+          <Route
+            path={pages.get('menu').path}
+            element={<Menu />}
           />
           <Route path={pages.get('bookings').path} element={<Bookings />} />
-          <Route 
+          <Route
             path={pages.get('confirmedBooking').path}
             element={<ConfirmedBooking />}
           />

@@ -1,7 +1,7 @@
 import baklava from './assets/baklava.jpg';
 import donerKebab from './assets/doner-kebab.jpg'
 import chickenBiryani from './assets/chicken-biryani.jpg'
-import kavurma from './assets/Kavurma.jpg'
+import kavurma from './assets/kavurma.jpg'
 import dolma from './assets/dolma.jpg'
 import hummus from './assets/hummus.jpg'
 import kofte from './assets/kofte.jpg'
@@ -17,7 +17,7 @@ const Menu = () => {
       <div className="menu-header">
       <h2>Appetizers</h2>
     </div>
-        <section className="menu">
+        <section className="menu-appetizers">
           <article className="meal-card">
             <div className="meal-card-image">
               <img src={hummus} alt="Hummus" />
@@ -69,7 +69,7 @@ const Menu = () => {
         <div className="menu-header">
       <h2>Main Course</h2>
     </div>
-        <section className="menu">
+        <section className="menu-main-course">
         <article className="meal-card">
             <div className="meal-card-image">
               <img src={chickenBiryani} alt="Chicken Biryani" />
@@ -121,9 +121,7 @@ const Menu = () => {
               Experience the perfect harmony of flavors in every bite
               </p>
             </div>
-          </article>
-        </section>
-        <section className='menu-1'>
+        </article>
         <article className="meal-card">
             <div className="meal-card-image">
               <img src={donerKebab} alt="Doner Kebab" />
@@ -174,10 +172,11 @@ const Menu = () => {
             </div>
           </article>
         </section>
+
         <div className="menu-header">
       <h2>Dessert</h2>
     </div>
-    <section className='menu'>
+    <section className='menu-dessert'>
     <article className="meal-card">
             <div className="meal-card-image">
               <img src={baklava} alt="Baklava" />
