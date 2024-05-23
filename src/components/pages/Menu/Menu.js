@@ -80,9 +80,9 @@ const Menu = () => {
             </div>
             <div className="meal-card-body-footer">
               <p>
-              Savor tender, marinated chicken pieces cooked with fragrant basmati rice, 
-              rich spices, and garnished with caramelized onions and fresh cilantro. 
-              A true culinary delight that will transport your taste buds 
+              Savor tender, marinated chicken pieces cooked with fragrant basmati rice,
+              rich spices, and garnished with caramelized onions and fresh cilantro.
+              A true culinary delight that will transport your taste buds
               to the heart of South-East Asia with every exquisite bite.
               </p>
             </div>

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import FormField from './FormField';
-
+import './BookingForm.css'
 const BookingForm = ({
   availableTimes,
   dispatchOnDateChange,
@@ -152,7 +152,7 @@ const BookingForm = ({
           onChange={e => setNumberGuests(e.target.value)}
         />
       </FormField>
-      <button 
+      <button
         className="button-primary" 
         type="submit" 
         disabled={!areAllFieldsValid()}
