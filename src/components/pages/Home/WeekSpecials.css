@@ -1,6 +1,6 @@
 .week-specials {
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto;
+  grid-template-rows: auto auto auto;
   gap: 1.25rem;
 }
 

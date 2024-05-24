@@ -153,8 +153,8 @@ const BookingForm = ({
         />
       </FormField>
       <button
-        className="button-primary" 
-        type="submit"  
+        className="button-primary"
+        type="submit"
         disabled={!areAllFieldsValid()}
       >
         Make your reservation
