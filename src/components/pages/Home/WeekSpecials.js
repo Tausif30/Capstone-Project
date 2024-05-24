@@ -42,6 +42,8 @@ const WeekSpecials = () => {
           Menu
         </Link>
       </div>
+      <br></br>
+      <br></br>
       {meals.map((meal, index) =>
         <MealCard key={index} meal={meal} />
       )}
