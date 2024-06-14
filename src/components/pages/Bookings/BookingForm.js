@@ -1,12 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
-import React, { useRef, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import emailjs from '@emailjs/browser';
 import FormField from './FormField';
-import './BookingForm.css';
-
 import './BookingForm.css';
 
 const BookingForm = ({
@@ -15,7 +10,6 @@ const BookingForm = ({
   submitData
 }) => {
   const navigate = useNavigate();
-  const navigate = useNavigate();
   const minimumDate = new Date().toISOString().split('T')[0];
   const defaultTime = availableTimes[0];
   const minimumNumberOfGuests = 1;
@@ -23,9 +17,7 @@ const BookingForm = ({
   const invalidDateErrorMessage = 'Please choose a valid date';
   const invalidTimeErrorMessage = 'Please choose a valid time';
   const invalidNumberOfGuestsErrorMessage =
-  const invalidNumberOfGuestsErrorMessage =
     'Please enter a number between 1 and 10';
-
 
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
@@ -33,7 +25,6 @@ const BookingForm = ({
   const [date, setDate] = useState(minimumDate);
   const [time, setTime] = useState(defaultTime);
   const [numberOfGuests, setNumberGuests] = useState(minimumNumberOfGuests);
-  
   
   const isNameValid = () => name !== '';
   const isPhoneValid = () => phone !== '';
@@ -49,11 +40,7 @@ const BookingForm = ({
     && isDateValid() 
     && isTimeValid() 
     && isNumberOfGuestsValid();
-    && isNumberOfGuestsValid();
   
-  const handleNameChange = e => setName(e.target.value);
-  const handlePhoneChange = e => setPhone(e.target.value);
-  const handleEmailChange = e => setEmail(e.target.value);
   const handleNameChange = e => setName(e.target.value);
   const handlePhoneChange = e => setPhone(e.target.value);
   const handleEmailChange = e => setEmail(e.target.value);
@@ -65,8 +52,6 @@ const BookingForm = ({
 
   const form = useRef();
   const sendEmail = (e) => {
-  const form = useRef();
-  const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
@@ -74,7 +59,7 @@ const BookingForm = ({
       .then(
         () => {
           console.log('SUCCESS!');
-          navigate('/confirmed-booking');
+          navigate('/confirmation');
         },
         (error) => {
           console.log('FAILED...', error.text);
@@ -85,17 +70,7 @@ const BookingForm = ({
   return (
     <form onSubmit={sendEmail} ref={form}>
       <FormField label="Name" htmlFor="booking-name">
-    <form onSubmit={sendEmail} ref={form}>
-      <FormField label="Name" htmlFor="booking-name">
         <input
-          type="text"
-          id="booking-name"
-          name="booking-name"
-          value={name}
-          placeholder='Name'
-          required={true}
-          onChange={handleNameChange}
-        />
           type="text"
           id="booking-name"
           name="booking-name"
@@ -106,16 +81,7 @@ const BookingForm = ({
         />
       </FormField>
       <FormField label="Phone Number" htmlFor="booking-number">
-      <FormField label="Phone Number" htmlFor="booking-number">
         <input
-          type="tel"
-          id="booking-number"
-          name="booking-number"
-          placeholder='Phone Number'
-          value={phone}
-          required={true}
-          onChange={handlePhoneChange}
-        />
           type="tel"
           id="booking-number"
           name="booking-number"
@@ -126,16 +92,7 @@ const BookingForm = ({
         />
       </FormField>
       <FormField label="E-Mail Address" htmlFor="booking-email">
-      <FormField label="E-Mail Address" htmlFor="booking-email">
         <input
-          type="email"
-          id="booking-email"
-          name="booking-email"
-          placeholder='Email Address'
-          value={email}
-          required={true}
-          onChange={handleEmailChange}
-        />
           type="email"
           id="booking-email"
           name="booking-email"
@@ -176,7 +133,6 @@ const BookingForm = ({
         >
           {availableTimes.map(times => 
             <option key={times} value={times}>
-            <option key={times} value={times}>
               {times}
             </option>
           )}
@@ -209,6 +165,5 @@ const BookingForm = ({
     </form>
   );
 };
-
 
 export default BookingForm;
