@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   background-color: #181a1b;
+  
 }
 
 body {
@@ -11,10 +12,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.5;
   color: #495E57;
-}
-
-header {
-  border-bottom: 1rem solid #495E57;
 }
 
 a {

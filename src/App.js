@@ -11,6 +11,7 @@ import NotFound from './components/pages/NotFound';
 import UnderConstruction from './components/pages/UnderConstruction';
 import AboutUs from './components/pages/About Us/About_Us'
 import Menu from './components/pages/Menu/Menu';
+import './App.css'
 const App = () => {
   return (
     <>
