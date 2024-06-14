@@ -59,7 +59,7 @@ const BookingForm = ({
       .then(
         () => {
           console.log('SUCCESS!');
-          navigate('/confirmation');
+          navigate('/confirmed-booking');
         },
         (error) => {
           console.log('FAILED...', error.text);
